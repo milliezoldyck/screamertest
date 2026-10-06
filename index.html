@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon site</title>
+
+  <style>
+    #screamer {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: black;
+    }
+
+    #screamer img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TON SITE NORMAL -->
+  <h1>Bienvenue...</h1>
+
+  <!-- SCREAMER -->
+  <div id="screamer">
+    <img src="screamer.jpg" alt="">
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById("screamer").style.display = "block";
+    }, 1500);
+  </script>
+
+</body>
+</html>
